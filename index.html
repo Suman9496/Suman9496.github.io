@@ -263,6 +263,14 @@
   .status-soon{color:var(--amber); background:rgba(251,191,36,0.1); border:1px solid rgba(251,191,36,0.3);}
   .status-dot{width:6px; height:6px; border-radius:50%; background:currentColor;}
   .proj-stack{font-family:'JetBrains Mono',monospace; font-size:0.74rem; color:var(--text-faint); margin-bottom:16px;}
+  .proj-desc{
+  color: var(--text-dim);
+  font-size: 0.96rem;
+  line-height: 1.95;
+  margin: 18px 0 18px;
+  max-width: 92%;
+  letter-spacing: 0.2px;
+}
   .project-card ul{margin-left:18px; color:var(--text-dim); line-height:1.8; font-size:0.92rem;}
   .proj-link-row{margin-top:18px; display:flex; flex-wrap:wrap; align-items:center; gap:14px;}
   .proj-link{
@@ -620,7 +628,7 @@
         <span class="status-pill status-live"><span class="status-dot"></span>live</span>
       </div>
       <div class="proj-stack">React 18 · TypeScript · Vite · React Router · Tailwind CSS · Radix UI · Lucide React · jsPDF + html2canvas · Express · Vitest</div>
-      <p style="color:var(--text-dim); font-size:0.92rem; line-height:1.75; margin-bottom:6px;">
+      <p class="proj-desc">
         A full-stack Vite + React tool for travel consultants to put together a complete trip package — destination, template, dates, travellers, day-by-day activities, hotels, flights, inclusions, visa details, notes, and payment installments — and export the same data straight to a client-ready, multi-page PDF. The live builder form and a hidden print-ready DOM tree share one state object, so the on-screen preview always matches the exported PDF; each page is captured with html2canvas and assembled into the file with jsPDF. An optional Express layer is included for future backend work like auth or CRM integrations.
       </p>
       <div class="bench-badges">
@@ -637,7 +645,7 @@
         <span class="status-pill status-soon"><span class="status-dot"></span>deploying soon</span>
       </div>
       <div class="proj-stack">HTML5 · CSS3 · JavaScript · GSAP</div>
-      <p style="color:var(--text-dim); font-size:0.92rem; line-height:1.75; margin-bottom:6px;">
+      <p class="proj-desc">
         A dark-UI creative-studio site built for the MINDCODES Full Stack Web Development Internship Assessment, recreating a given Adobe XD design pixel-for-pixel — smooth scroll-triggered GSAP animations and a fully responsive layout across breakpoints.
       </p>
       <div class="bench-badges">
